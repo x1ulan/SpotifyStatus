@@ -1,4 +1,4 @@
-> Notice: After March 9, 2026. Spotify WebAPI will require a premium account
+> # Notice: After March 9, 2026. Spotify WebAPI will require a premium account
 
 # SpotStatus
 
