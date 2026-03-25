@@ -7,16 +7,14 @@ const app = new Hono()
 app.use(
   '/api/*',
   cors({
-    origin: ["http://127.0.0.1:4000", "https://xiulan.me"],
+    origin: ["http://127.0.0.1:8787"]
   })
 )
-
 
 app.get("/api/spotify", async (c) => {
   const token: TokenInfo = await getRefreshToken()
   const data = await getMyMusic(token.access_token)
   return c.json(data)
 })
-
 
 export default app
